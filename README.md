@@ -7,7 +7,6 @@ cd demo/x86
 make
 ./test
 ```
-注意：需要将该工程放入tflite micro工程中，否则会找不到相关头文件。（你也可以自行把相关头文件放过来）。
 
 本git里面的`libtensorflow-microlite.a`是针对ubuntu编译的，建议自行编译替换。
 

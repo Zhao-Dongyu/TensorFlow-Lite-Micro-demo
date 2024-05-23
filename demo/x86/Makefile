@@ -7,9 +7,12 @@ CFLAGS = -g -Wall -os -DTF_LITE_STATIC_MEMORY
 
 # 增加include目录
 INCLUDES = -I../../
-INCLUDES += -I../../tensorflow/lite/micro/tools/make/downloads/flatbuffers/include/ 
-INCLUDES += -I../../tensorflow/lite/micro/tools/make/downloads/gemmlowp/
-INCLUDES +=  -I../include -I../include/dependent_libraries -I./models
+# INCLUDES += -I../../tensorflow/lite/micro/tools/make/downloads/flatbuffers/include/ 
+# INCLUDES += -I../../tensorflow/lite/micro/tools/make/downloads/gemmlowp/
+# INCLUDES +=  -I../include -I../include/dependent_libraries
+
+INCLUDES +=  -I./include
+INCLUDES +=  -I./models
 
 # 增加库目录
 LDFLAGS = -L.
